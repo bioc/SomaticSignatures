@@ -1,4 +1,3 @@
-
 Package: SomaticSignatures
 Type: Package
 Title: Somatic Signatures
@@ -12,6 +11,4 @@ Depends: R (>= 3.0.2)
 Suggests: testthat, knitr, BiocStyle, parallel, BSgenome.Hsapiens.UCSC.hg19, SomaticCancerAlterations, h5vc, h5vcData
 VignetteBuilder: knitr
 ByteCompile: TRUE
-License: GPL-3
-LazyLoad: yes
 biocViews: Bioinformatics, Classification, Clustering, Visualization
