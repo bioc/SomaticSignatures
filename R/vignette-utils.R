@@ -1,4 +1,4 @@
-scaVRanges <- function(chrs = hsAutosomes()) {
+scaSNVRanges <- function(chrs = hsAutosomes()) {
 
     sca_all = scaLoadDatasets()
     sca_metadata = scaMetadata()
