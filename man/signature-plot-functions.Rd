@@ -76,7 +76,7 @@ plotSamples(s, normalize = FALSE, percent = FALSE)
 \examples{
 data("sca_sigs", package = "SomaticSignatures")
 
-plotSamples(sca_sigs)
+plotSamples(sigs_nmf)
 
-plotSignatures(sca_sigs)
+plotSignatures(sigs_nmf)
 }

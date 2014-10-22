@@ -3,6 +3,8 @@
 \alias{sca-data}
 \alias{sca_sigs}
 \alias{sca_mm}
+\alias{sigs_nmf}
+\alias{sigs_pca}
 
 \docType{data}
 
