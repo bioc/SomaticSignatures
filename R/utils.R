@@ -10,10 +10,6 @@ setAs("character", "factor", function(from) {
 })
 
 
-cosineSimilarity <- function(x, y) {
-}
-
-
 showSome <- function(x, name, indent="") {
     res <- sprintf("%s%s (%d): %s\n",
                    indent,
@@ -23,6 +19,3 @@ showSome <- function(x, name, indent="") {
                    )
     return(res)
 }
-
-
-dna_bases <- c("A", "C", "G", "T")
