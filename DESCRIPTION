@@ -1,7 +1,7 @@
 Package: SomaticSignatures
 Type: Package
 Title: Somatic Signatures
-Version: 2.5.5
+Version: 2.4.5
 Author: Julian Gehring (EMBL Heidelberg)
 Maintainer: Julian Gehring <julian.gehring@embl.de>
 Description: The SomaticSignatures package identifies mutational signatures of single nucleotide variants (SNVs).  It provides a infrastructure related to the methodology described in Nik-Zainal (2012, Cell), with flexibility in the matrix decomposition algorithms.
@@ -20,4 +20,3 @@ LazyLoad: yes
 biocViews: Sequencing, SomaticMutation, Visualization, Clustering,
         GenomicVariation, StatisticalMethod
 NeedsCompilation: no
-Packaged: 2015-07-13 09:16:18 UTC; julian
