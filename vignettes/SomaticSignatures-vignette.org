@@ -657,7 +657,7 @@ chromosomes, based on a sample of 10'000 locations.
   n = 1e4
          
   hs_chrs = as(seqinfo(BSgenome.Hsapiens.1000genomes.hs37d5), "GRanges")
-  hs_chrs = keepStandardChromosomes(hs_chrs)
+  hs_chrs = keepSeqlevels(hs_chrs, c(1:22, "X", "Y"))
 
   k3_hs_chrs = kmerFrequency(BSgenome.Hsapiens.1000genomes.hs37d5, n, k, hs_chrs)
   k3_hs_chrs
