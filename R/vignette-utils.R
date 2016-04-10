@@ -6,7 +6,7 @@ scaSNVRanges <- function(chrs = hsAutosomes()) {
 
     sca_merge = unlist(sca_all)
     short_names = gsub("(.*)_(.*)", "\\1", rownames(sca_metadata))
-    names(sca_merge) = sca_merge$study = factor(rep(short_names, times = elementLengths(sca_all)))
+    names(sca_merge) = sca_merge$study = factor(rep(short_names, times = lengths(sca_all)))
     
     sca_merge = sca_merge[ sca_merge$Variant_Type %in% "SNP" ]
     sca_merge = keepSeqlevels(sca_merge, chrs)

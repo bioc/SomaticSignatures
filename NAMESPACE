@@ -1,4 +1,3 @@
-import(S4Vectors)
 import(GenomeInfoDb)
 import(GenomicRanges)
 import(VariantAnnotation)
@@ -7,6 +6,7 @@ import(IRanges)
 import(Biostrings)
 import(methods)
 
+importFrom(S4Vectors, lengths, DataFrame)
 importFrom(reshape2, melt)
 importFrom(ggbio, plotGrandLinear)
 importFrom(NMF, nmf, basis, coef, fitted, rss, evar)
