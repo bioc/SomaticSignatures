@@ -1,8 +1,8 @@
 Package: SomaticSignatures
 Type: Package
 Title: Somatic Signatures
-Version: 2.8.1
-Author: Julian Gehring (EMBL Heidelberg)
+Version: 2.8.2
+Author: Julian Gehring
 Maintainer: Julian Gehring <jg-bioc@gmx.com>
 Description: The SomaticSignatures package identifies mutational signatures of single nucleotide variants (SNVs).  It provides a infrastructure related to the methodology described in Nik-Zainal (2012, Cell), with flexibility in the matrix decomposition algorithms.
 URL: http://bioconductor.org/packages/release/bioc/html/SomaticSignatures.html, https://github.com/julian-gehring/SomaticSignatures-release
@@ -12,5 +12,7 @@ Suggests: testthat, knitr, parallel, BSgenome.Hsapiens.1000genomes.hs37d5, Somat
 VignetteBuilder: knitr
 ByteCompile: TRUE
 License: MIT + file LICENSE
+URL: https://github.com/juliangehring/SomaticSignatures
+BugReports: https://support.bioconductor.org
 LazyLoad: yes
 biocViews: Sequencing, SomaticMutation, Visualization, Clustering, GenomicVariation, StatisticalMethod
