@@ -1,6 +1,6 @@
 mutationDistance <- function(x) {
 
-    x = granges(x, TRUE)
+    x = granges(x, use.mcols=TRUE)
     x = sort(x) ## must be sorted
     idx_change = start(seqnames(x)) ## where does a new chr begin
     dist = diff(c(1, start(x))) ## to keep the same length
