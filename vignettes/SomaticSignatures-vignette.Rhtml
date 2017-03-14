@@ -372,7 +372,7 @@ sca_data = unlist(scaLoadDatasets())
 
 sca_data$study = factor(gsub("(.*)_(.*)", "\\1", toupper(names(sca_data))))
 sca_data = unname(subset(sca_data, Variant_Type %in% "SNP"))
-sca_data = keepSeqlevels(sca_data, hsAutosomes())
+sca_data = keepSeqlevels(sca_data, hsAutosomes(), pruning.mode = "coarse")
 
 sca_vr = VRanges(
     seqnames = seqnames(sca_data),
@@ -770,7 +770,7 @@ k = 3
 n = 1e4
 
 hs_chrs = as(seqinfo(BSgenome.Hsapiens.1000genomes.hs37d5), "GRanges")
-hs_chrs = keepSeqlevels(hs_chrs, c(1:22, "X", "Y"))
+hs_chrs = keepSeqlevels(hs_chrs, c(1:22, "X", "Y"), pruning.mode = "coarse")
 
 k3_hs_chrs = kmerFrequency(BSgenome.Hsapiens.1000genomes.hs37d5, n, k, hs_chrs)
 k3_hs_chrs
