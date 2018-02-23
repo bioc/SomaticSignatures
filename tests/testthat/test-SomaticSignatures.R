@@ -62,33 +62,6 @@ test_that("'mutationContextMutect' works", {
 })
 
 
-context("mutationContext")
-
-test_that("'mutationContext' works", {
-
-    if(require(BSgenome.Hsapiens.1000genomes.hs37d5)) {
-
-        vr0 = readMutect(mutect_path)
-        vr1 = vr0
-        mcols(vr1) = NULL
-
-        vr2 = mutationContextMutect(vr0)
-        vr1 = mutationContext(ncbi(vr1), BSgenome.Hsapiens.1000genomes.hs37d5)
-        expect_equal(as.character(vr1$alteration), as.character(vr2$alteration))
-        expect_equal(as.character(vr1$context), as.character(vr2$context.1))
-
-        vr9 = vr1[1]
-        alt(vr9) = "CA"
-        expect_error(mutationContext(vr9, BSgenome.Hsapiens.1000genomes.hs37d5))
-
-        vr9 = vr1[1]
-        ref(vr9) = "CAT"
-        expect_error(mutationContext(vr9, BSgenome.Hsapiens.1000genomes.hs37d5))
-
-    }
-})
-
-
 context("GC")
 
 test_that("'gc' works", {
