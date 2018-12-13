@@ -6,7 +6,7 @@ import(IRanges)
 import(Biostrings)
 import(methods)
 
-importFrom(S4Vectors, lengths, DataFrame)
+importFrom(S4Vectors, DataFrame)
 importFrom(reshape2, melt)
 importFrom(ggbio, plotGrandLinear)
 importFrom(NMF, nmf, basis, coef, fitted, rss, evar)
