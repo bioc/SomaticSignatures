@@ -249,6 +249,7 @@ specific cancer type.
 
   sca_data$study = factor(gsub("(.*)_(.*)", "\\1", toupper(names(sca_data))))
   sca_data = unname(subset(sca_data, Variant_Type %in% "SNP"))
+  library(GenomeInfoDb)  # for keepSeqlevels()
   sca_data = keepSeqlevels(sca_data, hsAutosomes(), pruning.mode = "coarse")
 
   sca_vr = VRanges(

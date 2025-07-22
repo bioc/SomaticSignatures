@@ -55,7 +55,7 @@
   
   \code{\link{seqnames}}, \code{\link{mcols}}
   
-  \code{\link{seqlevelsStyle}}
+  \code{\link[GenomeInfoDb]{seqlevelsStyle}}
   
 }
 

@@ -2,6 +2,7 @@
 library(SomaticSignatures)
 library(BSgenome.Hsapiens.UCSC.hg19)
 library(TxDb.Hsapiens.UCSC.hg19.knownGene)
+library(GenomeInfoDb)  # for keepSeqlevels()
 
 k = 3
 n = 1e7

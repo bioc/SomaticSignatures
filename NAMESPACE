@@ -1,4 +1,4 @@
-import(GenomeInfoDb)
+import(Seqinfo)
 import(GenomicRanges)
 import(VariantAnnotation)
 import(ggplot2)
